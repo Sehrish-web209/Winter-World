@@ -7,6 +7,10 @@ This task is created using HTML, CSS, and JavaScript.
 - Left and right movement
 - Basic keyboard event handling
 
+## Live Demo 
+- Check live demo of task here: 
+  https://sehrish-web209.github.io/Box-Movement-using-JS-Task/ 
+
 ## Technologies Used
 - HTML
 - CSS
