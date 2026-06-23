@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Practice</title>
+    <style>
+        #container{
+            border: 2px solid blue;
+            background-color:azure;
+            padding: 1em;
+            height:350px;
+            width:250px;
+            position: relative;
+        }
+         #box{
+            border: 3px solid green;
+            background-color:lightgray;
+            padding: 0.7em;
+            Height:50px;
+            Width:40px;
+            position:absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM Manipulation</h1>
+    <p>Document Object Model task for practice</p>
+    <div id="container">
+        <div  id="box">BOX1</div>
+    </div>
+    <script>
+        const box=document.querySelector('#box');
+        let x=0;
+        let y=0;
+        document.addEventListener("keydown",function(event){
+            if(event.key == "ArrowRight"){
+            x=x+10;}
+            if(event.key == "ArrowLeft"){
+            x=x-10;
+            }
+            if(event.key == "ArrowUp"){
+            y=y-10;}
+            if(event.key == "ArrowDown"){
+                y=y+10;
+            }
+            box.style.left = x + "px";
+            box.style.top = y + "px";
+        });
+    </script>
+</body>
+</html>
